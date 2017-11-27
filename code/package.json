@@ -9,15 +9,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ashleygwilliams/my_package.git"
+        "url": ""
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/ashleygwilliams/my_package/issues"
+        "url": "https://github.com/honza-kasik/nodejs_logging_service/issues"
     },
-    "homepage": "https://github.com/ashleygwilliams/my_package",
+    "homepage": "https://github.com/honza-kasik/nodejs_logging_service",
     "dependencies": {
         "express": "4.16.2",
         "run": "^1.4.0",
