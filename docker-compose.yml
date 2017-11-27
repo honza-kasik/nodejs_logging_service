@@ -1,0 +1,29 @@
+version: "3"
+services:
+ node:
+  image: "node:8"
+  command: "bash -c \"npm install && npm start\""
+  working_dir: /home/node/app
+  environment:
+    - NODE_ENV=production
+  volumes:
+    - ./code:/home/node/app:z
+  expose:
+    - "8081"
+  ports:
+    - 10001:8888
+  links:
+   - mysqldb
+ mysqldb:
+  image:    mysql
+  restart:  always
+  container_name: nodejs_database_host
+  environment:
+    - MYSQL_DATABASE=article_repository
+    - MYSQL_ROOT_PASSWORD=toor
+    - MYSQL_USER=user
+    - MYSQL_PASSWORD=toor
+  ports:
+    - "8989:3306"
+  volumes:
+    - ./data/db/mysql:/var/lib/mysql/:z

@@ -1,0 +1,28 @@
+{
+    "name": "logging-service",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon start-server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ashleygwilliams/my_package.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ashleygwilliams/my_package/issues"
+    },
+    "homepage": "https://github.com/ashleygwilliams/my_package",
+    "dependencies": {
+        "express": "4.16.2",
+        "run": "^1.4.0",
+        "mysql": "2.15.0",
+        "moment": "*",
+        "nodemon": "*"
+    }
+}
